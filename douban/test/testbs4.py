@@ -120,7 +120,7 @@ import re
 
 # t_list = bs.select(".mnav ~ .bri")      # 通过兄弟标签来查找
 
-print(t_list[0].get_text())
+# print(t_list[0].get_text())
 
 
 
