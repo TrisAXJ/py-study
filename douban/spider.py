@@ -18,9 +18,9 @@ def main():
     datalist = getData(baseurl)
     savepath = ".\\豆瓣电影Top250.xls"
     # 3.保存数据
-    #saveData(savepath)
+    # saveData(savepath)
 
-    askURL("https://movie.douban.com/top250?start=")
+    # askURL("https://movie.douban.com/top250?start=")
 
 
 # 爬取网页
@@ -31,6 +31,8 @@ def getData(baseurl):
         html = askURL(url)      # 保存获取到的网页源码
 
         # 2.逐一解析数据
+        soup = BeautifulSoup(html ,"html.parser")
+
 
 
 
